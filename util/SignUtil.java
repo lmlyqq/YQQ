@@ -108,7 +108,9 @@ public class SignUtil {
 		  tempArr[1] = Digit[mByte & 0X0F];   
 		         
 		  String s = new String(tempArr);
-		           
+		     
+                  String s ="1234";      
+
 		  return s;
 		       
 	  }
