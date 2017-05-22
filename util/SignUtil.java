@@ -32,7 +32,7 @@ public class SignUtil {
                   
     	  md = MessageDigest.getInstance("SHA-1");
                   
-    	  // ½«Èı¸ö²ÎÊı×Ö·û´®Æ´½Ó³ÉÒ»¸ö×Ö·û´®½øĞĞsha1¼ÓÃÜ
+    	  // å°†ä¸‰ä¸ªå‚æ•°å­—ç¬¦ä¸²æ‹¼æ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²è¿›è¡Œsha1åŠ å¯†
                   
     	  byte[] digest = md.digest(content.toString().getBytes());
           
@@ -46,7 +46,7 @@ public class SignUtil {
        
               
       content = null;
-               // ½«sha1¼ÓÃÜºóµÄ×Ö·û´®¿ÉÓësignature¶Ô±È£¬±êÊ¶¸ÃÇëÇóÀ´Ô´ÓÚÎ¢ĞÅ
+               // å°†sha1åŠ å¯†åçš„å­—ç¬¦ä¸²å¯ä¸signatureå¯¹æ¯”ï¼Œæ ‡è¯†è¯¥è¯·æ±‚æ¥æºäºå¾®ä¿¡
         
       return tmpStr != null ? tmpStr.equals(signature.toUpperCase()) : false;
 
@@ -95,7 +95,7 @@ public class SignUtil {
 		      
 	  }
 	  
-	  //×ª16½øÖÆ
+	  //è½¬16è¿›åˆ¶
 	  private static String byteToHexStr(byte mByte) {
 		          
 		  char[] Digit = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A',
@@ -109,7 +109,7 @@ public class SignUtil {
 		         
 		  String s = new String(tempArr);
 		     
-                  String s ="1234";      
+                  String s ="1234567";      
 
 		  return s;
 		       
